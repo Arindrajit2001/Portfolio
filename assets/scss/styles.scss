@@ -523,3 +523,45 @@ img{
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+  .hobby {
+    &__container {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    &__item {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .certificates {
+    &__container {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .certificate__item {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .modal {
+    &-content {
+      max-width: 95%;
+      max-height: 70%;
+    }
+
+    .close {
+      font-size: 24px;
+      top: 10px;
+      right: 15px;
+    }
+  }
+}
+
