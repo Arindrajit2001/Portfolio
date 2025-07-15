@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Certificates</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="index.html" class="nav__logo">Arindrajit</a>
+        </div>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="certificates.html" class="nav__link active-link"
+                >Certificates</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="certificates section">
+        <h2 class="section-title">My Certificates</h2>
+        <div class="certificates__container bd-grid">
+          <div class="certificate__item">
+            <img
+              src="assets/img/html.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Web Development Certification HTML</h3>
+            <p>Issued by: Great Learning</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/java.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>JAVA (Basics)</h3>
+            <p>Issued by: HackerRank</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/reactbootcamp.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>React Bootcamp</h3>
+            <p>Issued by: Lets Upgrade</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/NIPAM.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>NIPAM - National Intellectual Property Awareness Mission</h3>
+            <p>Issued by: Government Of India</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/multimedia.jpg"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Basics Multimedia Development</h3>
+            <p>
+              Issued by: Shree Agrasain College (Affiliated to University Of
+              Calcutta)
+            </p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/ResOrderSysCerti.jpg"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Restaurant Ordering System Website Project Certificate</h3>
+            <p>
+              Issued by: Issued by: Shree Agrasain College (Affiliated to
+              University Of Calcutta)
+            </p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/nodebc.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Node JS bootcamp</h3>
+            <p>Issued by: Lets Upgrade</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/icuf.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Instagram Clone Using Figma (Project Certificate)</h3>
+            <p>Issued by: Lets Upgrade</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/UIUX.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>UI/UX - Figma (Ongoing)</h3>
+            <p>Will be Issued by: Udemy</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/MERN.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Full Stack Web Development with MERN (Ongoing)</h3>
+            <p>Will be Issued by: Udemy</p>
+          </div>
+          <div class="certificate__item">
+            <img
+              src="assets/img/hacking.png"
+              alt="Certificate Image"
+              onclick="openModal(this)"
+            />
+            <h3>Ethical Hacking Masterclass (Ongoing)</h3>
+            <p>Will be Issued by: Udemy</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <footer class="footer">
+      <p class="footer__title">Arindrajit</p>
+      <p class="footer__copy">&#169; 2025 Arindrajit. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript to Open & Close Modal -->
+    <script>
+      function openModal(imgElement) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+
+        modal.style.display = "block";
+        modalImg.src = imgElement.src;
+      }
+
+      document.querySelector(".close").onclick = function () {
+        document.getElementById("imageModal").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
